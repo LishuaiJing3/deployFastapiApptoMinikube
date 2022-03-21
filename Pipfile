@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+confluent-kafka = "*"
+numpy = "==1.20.3"
+pandas = "*"
+matplotlib = "*"
+fastapi = "*"
+uvicorn = "*"
+flake8 = "*"
+pytest = "*"
+pytest-azurepipelines = "*"
+pytest-cov = "*"
+pydantic = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: algo-app
+  labels:
+    name: algo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: algo-app
+  template:
+    metadata:
+      labels:
+        name: algo-app
+    spec:
+      containers:
+        - name: algo-app
+          image: algo/testimg
+          imagePullPolicy: Never    # set this to use local docker images. Next step to test a cloud image repo
+          ports:
+            - containerPort: 8001

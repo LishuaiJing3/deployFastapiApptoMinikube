@@ -1,0 +1,14 @@
+numpy == 1.20.3
+
+# TODO: add versions. 
+pandas
+matplotlib
+
+pydantic
+fastapi
+uvicorn
+
+flake8
+pytest 
+pytest-azurepipelines
+pytest-cov
